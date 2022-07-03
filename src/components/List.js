@@ -6,7 +6,7 @@ const List = () => {
   const [loading, setLoading] = useState(true);
   const API_ENDPOINT = 'https://rickandmortyapi.com/api/character';
   useEffect(() => {
-      const fetchData = async () =>{
+      const fetchData = async () => {
 
         let result = await fetch(API_ENDPOINT);
         let {results} = await result.json();
